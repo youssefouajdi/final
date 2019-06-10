@@ -1,0 +1,232 @@
+.logo img{
+	overflow: auto;
+	  width: 150px;
+  	height: 150px; 
+}
+.logo .accueil{
+	width: 150px;
+}
+.logo .accueil:hover{
+	background-color: #fff; 
+}
+
+*{
+	box-sizing: border-box;
+	font-size: 18px;
+}
+body{
+	margin: 0px;
+}
+nav{
+	display: flex;
+	margin-top: 40px;
+}
+a{
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	height: 30px;
+	color:black;
+}
+a:hover{
+	background-color: rgba(125,125,125,0.5); 
+}
+/*navigation1*/
+[class*="navigation"]/*.navigation1,.navigation2,.navigation3,.navigation4*/{
+	width: 25%;
+}
+.n1,.n2,.n3,.n4,.n5{ 
+	background-color: rgb(125,125,125);
+  width: 100%;
+	text-align: center;
+	padding: 10px;
+}
+.n1:hover,.n2:hover,.n3:hover,.n4:hover,.n5:hover{
+	background-color: rgba(125,125,125,0.8);
+	cursor:pointer;
+}
+.n12,.n22,.n32,.n42{
+	display: none;
+	background-color: rgba(125,125,125,0.8);
+  width: 100%;
+
+	text-align: center;
+}
+div.navigation1:hover div.n12, div.navigation2:hover div.n22,div.navigation3:hover div.n32, div.navigation4:hover div.n42{
+	background-color: rgba(125,125,125,0.8);
+	text-align :center;
+	cursor:pointer;
+	display: block;
+}
+
+@media screen and (max-width: 900px){
+	nav{
+		display: flex;
+		flex-direction: column;
+	}
+	.navigation1, .navigation2, .navigation3, .navigation4, .navigation5, .navigation6{
+    width: 100%;
+	}
+}
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+
+.log {
+  width: 100%;
+  background-color: black;
+}
+
+img {
+  width: 25px;
+  border-radius: 50px;
+  float: left;
+}
+
+.logout {
+  font-size: .8em;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+  right: -18px;
+  bottom: -4px;
+  overflow: hidden;
+  letter-spacing: 3px;
+  opacity: 0;
+  transition: opacity .45s;
+  -webkit-transition: opacity .35s;
+  
+}
+
+.button {
+	text-decoration: none;
+	float: right;
+  padding: 28px;
+  margin-top: 25px;
+  margin-left: 20px;
+  color: white;
+  width: 80px;
+  height: 80px;
+  transition: width .35s;
+  -webkit-transition: width .35s;
+  overflow: hidden
+}
+
+.button:hover {
+  width: 200px;
+}
+
+.button:hover .logout{
+  opacity: .9;
+}
+
+.button {
+  text-decoration: none;
+}
+.contant{
+	position: absolute;
+	top: 510px;
+	text-align: center;
+	color: blue;
+	width: 100%;
+}
+/*------------------------------------------------------------------*/
+body{
+    margin:0;
+    padding: 0;
+    font-family:sans-serif;
+}
+p{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 20px;
+
+}
+hr{
+    text-align: center;
+    width: 500px; 
+}
+.box{
+    width: 80%;
+    padding: 40px;
+    top: 80%;
+    left:10%;
+    background: rgb(9,4,0);
+    background: linear-gradient(90deg, rgba(9,4,0,1) 0%, rgba(153,0,46,1) 44%, rgba(255,0,69,1) 100%);text-align :center;
+    border-radius: 10px;
+}
+
+.box h1{
+    color :white;
+    text-transform:uppercase;
+    font-weight:500px;
+}
+
+.box input[type="text"],.box input[type="password"]{
+    border:0;
+    background:none;
+    display:block;
+    margin:20px auto;
+    text-align:center;
+    border: 2px solid #3498db;
+    padding:14px 10px;
+    width:200px;
+    outline: none;
+    color:white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box select{
+  border:0;
+  background:none;
+  display:block;
+  margin:20px auto;
+  text-align:center;
+  border: 2px solid #3498db;
+  padding:14px 10px;
+  width:400px;
+  outline: none;
+  color:gray;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type="date"]{
+  border:0;
+  background:none;
+  display:block;
+  margin:20px auto;
+  text-align:center;
+  border: 2px solid #3498db;
+  padding:14px 10px;
+  width:200px;
+  outline: none;
+  color:gray;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.box input[type="text"]:focus,.box input[type="password"],input[type="date"]:focus{
+width:280px;
+border-color:#2ecc71;
+}
+.box  input[type="date"]:focus{
+  width:250px;
+  border-color:#2ecc71;
+  }
+  
+
+.box button[type="submit"]{
+    border:0;
+    background:none;
+    display:block;
+    margin:20px auto;
+    text-align:center;
+    border: 2px solid #2ecc71;
+    padding:14px 40px;
+    outline: none;
+    color:white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box button[type="submit"]:hover{
+    background: #2ecc71;
+}
